@@ -27,7 +27,7 @@
         const CONF_AUTH_RULES_FILE = 'auth.rules_file';       
         
         public static function getAppConfigProperty($prop){
-            $APP_CONFIG_FILE = join(DIRECTORY_SEPARATOR , array(__BASE_PATH , 'conf' , 'environmentVariables.ini'));   
+            $APP_CONFIG_FILE = join(DIRECTORY_SEPARATOR , array(__BASE_PATH , 'conf' , 'appConfig.ini'));   
             $ev = parse_ini_file($APP_CONFIG_FILE);
             return $ev[$prop];
         }

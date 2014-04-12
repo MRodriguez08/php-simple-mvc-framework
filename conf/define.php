@@ -8,7 +8,7 @@
  */
 
 //se parsea el archivo de configuracion
-$ev = parse_ini_file("environmentVariables.ini");
+$ev = parse_ini_file("appConfig.ini");
 
 define('__BASE_PATH', $ev["base_path"]);
 define('__APP_PATH', __BASE_PATH . "/app");
