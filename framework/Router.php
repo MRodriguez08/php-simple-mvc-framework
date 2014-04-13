@@ -165,9 +165,9 @@ class Router {
         $enabled = AppConfig::getAppConfigProperty(AppConfig::CONF_AUTH_ENABLED);
         if ($enabled == 1)
         {
-            $this->checkAuthRules($this->controller, $action);
+            $authRules = new \framework\security\AuthRules();
+            $authRules->checkAuthorizationRules($this->controller, $action);
         }
-            
         
         /** * run the action ** */
         $controller->$action();

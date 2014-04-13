@@ -1,5 +1,7 @@
 <?php
 
+use framework\security\AuthRules;
+
 /**
  * DEFINO LOS ROLES A USAR EN LA APLICACION
  * Los mismos deben coincidir con los roles definidos en la base de datos
@@ -19,12 +21,9 @@ $userRoles = array(
 // formato [ autenticado(bool), [roles permitidos] ]
 $getMethods = [
     "Usuario" => [
-        "obtenerTodosUsuarios" => [true, [
-            Constantes::ID_ROL_ADMINISTRADOR
-        ]],
-        "obtenerDatosDeUsuarioLogueado" => [true, [
-            Constantes::ID_ROL_ADMINISTRADOR_ESTUDIO
-        ]],
+        "index" => [
+            AuthRules::DENY_ALL
+        ]
     ]
 ];
 
@@ -32,8 +31,10 @@ $postMethods = [
    
 ];
 
-$routerConditions = [
-    Constantes::METHOD_GET => $getMethods,
-    Constantes::METHOD_POST => $postMethods,
-    "PermisoEspecial" => ["Index"]
+$putMethods = [
+   
+];
+
+$deleteMethods = [
+   
 ];

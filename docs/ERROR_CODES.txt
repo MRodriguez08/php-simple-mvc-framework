@@ -1,0 +1,9 @@
+Este archivo define los codigos de error retornados por el framework
+
+ERROR01: Operation not allowed. Insuficient privileges
+ERROR02: Undefined authorization rules for action
+ERROR03: Undefined authorization rules for controller
+ERROR04: User information not found in current session
+ERROR05: Authentication rules file not defined in configuration file. [see auth.rules_file configuration parameter]
+ERROR06: Configuraction file not found
+ERROR07: Action denied to all
