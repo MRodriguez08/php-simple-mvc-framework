@@ -13,6 +13,7 @@ This is a small object oriented framework that help you with the basic requireme
 
 ### Web Sockets
 - [Ratchet WebSockets API](http://socketo.me/)
+
 ### Persistence
 - [Doctrine Object Relational Mapper API](http://www.doctrine-project.org/)
 
