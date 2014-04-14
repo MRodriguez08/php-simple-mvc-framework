@@ -20,4 +20,6 @@ Inside the model we find the Business Layer and Persistence Layer (Simple PHP MV
 - [Doctrine Object Relational Mapper API](http://www.doctrine-project.org/)
 
 ### AddOns
-- [JMS Serializer JSON API](http://www.doctrine-project.org/)
+- [JMS Serializer JSON API](http://jmsyst.com/bundles/JMSSerializerBundle)
+- [Bootstrap 3.1.1](http://getbootstrap.com/)
+- [JQuery v1.11](http://jquery.com/)
