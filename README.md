@@ -9,6 +9,6 @@ This is a small object oriented framework that help you with the basic requireme
 
 ### Model-View-Controller
 
-### Action authorization 
+### Authorization control
 
 ### Model-View-Controller
