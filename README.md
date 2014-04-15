@@ -17,7 +17,10 @@ Inside the model we find the Business Layer and Persistence Layer (Simple PHP MV
 - [Ratchet WebSockets API](http://socketo.me/)
 
 ### Persistence
+In the first place, SPMF include Doctrine as Object Relational Mapper, but considering the model layers separation, you could perfectly use another one (such as Propel for example). To do this, some implementation consideration has to be taken (simple-php-mvc-framework nowadays is tied up to Doctrine particular coding paradigm), so I suggest you to understand SPMF and do the appropiate changes, contact us if you need any help. 
 - [Doctrine Object Relational Mapper API](http://www.doctrine-project.org/)
+
+The Doctrine Project is the home to several PHP libraries primarily focused on database storage and object mapping. The core projects are a Object Relational Mapper (ORM) and the Database Abstraction Layer (DBAL) it is built upon.
 
 ### AddOns
 - [JMS Serializer JSON API](http://jmsyst.com/bundles/JMSSerializerBundle)
