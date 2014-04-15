@@ -12,7 +12,7 @@ This framework is fully Object Oriented and it implemented respecting Model-View
 Summing up, client requests are processed by Controller, which capture the context parameters (GET or POST parameters) and call Model operation to solve the requested action.
 Inside the model we find the Business Layer and Persistence Layer (Simple PHP MVC Framework is an hibrid between ModelViewControlelr and Stricts Layer Design Pattern to treat separetly Business Logic and Persistence logic). This Desing was taken considering the posibility of changing the persistence framework (now is Doctrine, in the future you may want to use another one), in that case you will only have to change specific implementation of your Persistence Layer)
 ### Authorization control
-
+Simple-php-mvc-framework provies you an easy way to configure who can, and who cannot acces to your controller's actions. You only have to know your business rules and put it all in a configuration file (by default authRules.php) with a easy-to-learn format specifying which roles are authorized to each action (or which actions are public). Defined roles in SPMF need to be the same as the defined in the database user roles table. 
 ### Web Sockets
 - [Ratchet WebSockets API](http://socketo.me/)
 
