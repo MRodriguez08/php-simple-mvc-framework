@@ -24,5 +24,8 @@ The Doctrine Project is the home to several PHP libraries primarily focused on d
 
 ### AddOns
 - [JMS Serializer JSON API](http://jmsyst.com/bundles/JMSSerializerBundle)
+	- json objects module to process information from or sent to user interface or web services.
 - [Bootstrap 3.1.1](http://getbootstrap.com/)
+	- excelente CSS library to create beautifull and responsive user interfaces. Thousands of bootstrap plugins are found on the net, for example DatePickers, FormHelpers, Validations, and others.
 - [JQuery v1.11](http://jquery.com/)
+	- the javascript multiplatafomr library that every web application need. It is a bootstrap depencency, but with a little reading you could do just magic on the client side!.
