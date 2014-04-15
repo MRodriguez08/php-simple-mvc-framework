@@ -16,6 +16,8 @@ Simple-php-mvc-framework provies you an easy way to configure who can, and who c
 ### Web Sockets
 - [Ratchet WebSockets API](http://socketo.me/)
 
+Ratchet is a loosely coupled PHP library providing developers with tools to create real time, bi-directional applications between clients and servers over WebSockets.
+
 ### Persistence
 In the first place, SPMF include Doctrine as Object Relational Mapper, but considering the model layers separation, you could perfectly use another one (such as Propel for example). To do this, some implementation consideration has to be taken (simple-php-mvc-framework nowadays is tied up to Doctrine particular coding paradigm), so I suggest you to understand SPMF and do the appropiate changes, contact us if you need any help. 
 - [Doctrine Object Relational Mapper API](http://www.doctrine-project.org/)
