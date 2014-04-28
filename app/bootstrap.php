@@ -12,10 +12,11 @@ require_once __BASE_PATH . '/vendor/autoload.php';
 $paths = array(__BASE_PATH . "/app/models/persistence/entities/");
 $isDevMode = false;
 $connectionParams = array(
-    'driver' => Config::getAppConfigProperty(Config::CONF_PARAM_DBDRIVER),
-    'user' => Config::getAppConfigProperty(Config::CONF_PARAM_DBUSER),
-    'password' => Config::getAppConfigProperty(Config::CONF_PARAM_DBPASSWORD),
-    'dbname' => Config::getAppConfigProperty(Config::CONF_PARAM_DBNAME)
+    'driver' => Config::getAppConfigProperty(Config::CONF_PARAM_R_DBDRIVER),
+    'user' => Config::getAppConfigProperty(Config::CONF_PARAM_R_DBUSER),
+    'password' => Config::getAppConfigProperty(Config::CONF_PARAM_R_DBPASSWORD),
+    'dbname' => Config::getAppConfigProperty(Config::CONF_PARAM_R_DBNAME),
+    'port' => Config::getAppConfigProperty(Config::CONF_PARAM_R_DBPORT)
 );
 
 $config = Setup::createConfiguration($isDevMode);

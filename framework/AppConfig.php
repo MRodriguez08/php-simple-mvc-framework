@@ -8,17 +8,27 @@
 
     class AppConfig {
         
-        /* archivo de configuracion de la aplicacion */     
+        /* APPLICATION CONFIGURATION FILE */
+        
+        
+        
+        /* APPLICATION CONSTATS */
+        const APP_CONST_NRDB_TYPE_MONGODB = "mongodb";
+        const APP_CONST_NRDB_TYPE_COACHDB = "coachdb";
         
         /* parametros configurables de la applicacion */
         
         const CONF_PARAM_BASE_PATH = "base_path";
         
-        const CONF_PARAM_DBDRIVER = "database.driver";
-        const CONF_PARAM_DBHOST = "database.host";
-        const CONF_PARAM_DBUSER = "database.user";
-        const CONF_PARAM_DBPASSWORD = "database.password";
-        const CONF_PARAM_DBNAME = "database.name";        
+        const CONF_PARAM_R_DBDRIVER = "database.r.driver";
+        const CONF_PARAM_R_DBHOST = "database.r.host";
+        const CONF_PARAM_R_DBUSER = "database.r.user";
+        const CONF_PARAM_R_DBPASSWORD = "database.r.password";
+        const CONF_PARAM_R_DBNAME = "database.r.name";        
+        const CONF_PARAM_R_DBPORT = "database.r.port";    
+        
+        const CONF_PARAM_NR_DBTYPE = "database.nr.dbtype";
+        const CONF_PARAM_NR_SOURCES = "database.nr.sources";   
         
         const CONF_PARAM_DEFAULT_ACTION = 'routing.default_action';
         const CONF_PARAM_DEFAULT_CONTROLLER = 'routing.default_controller';
