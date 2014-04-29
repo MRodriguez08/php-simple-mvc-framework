@@ -34,7 +34,13 @@
         const CONF_PARAM_DEFAULT_CONTROLLER = 'routing.default_controller';
         
         const CONF_AUTH_ENABLED = 'auth.enabled';
-        const CONF_AUTH_RULES_FILE = 'auth.rules_file';       
+        const CONF_AUTH_RULES_FILE = 'auth.rules_file'; 
+        
+        const CONF_NAMING_BUSINESS_IMPLEMENTATION = 'naming.business.implementation'; 
+        const CONF_NAMING_BUSINESS_INTERFACE = 'naming.business.interface';
+        const CONF_NAMING_PERSISTENCE_DAO_INTERFACE = 'naming.persistence.dao.interface';
+        const CONF_NAMING_PERSISTENCE_DAO_IMPLEMENTATION = 'naming.persistence.dao.implementation';
+        const CONF_NAMING_PERSISTENCE_ENTITY = 'naming.persistence.entity';        
         
         public static function getAppConfigProperty($prop){
             $APP_CONFIG_FILE = join(DIRECTORY_SEPARATOR , array(__BASE_PATH , 'conf' , 'appConfig.ini'));   
