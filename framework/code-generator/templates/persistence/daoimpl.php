@@ -1,8 +1,15 @@
 <?php
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+namespace app\models\persistence\daos;
 
+use framework\persistence\DaoImpl;
+
+class <dao-implementation> extends DaoImpl implements UsuarioDao {
+
+    public function __construct($em) {
+        parent::__construct($em);
+    }
+
+   
+
+}

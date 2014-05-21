@@ -13,22 +13,28 @@ $userRoles = array(
     'cliente' => 2
 );
 
-/** 
+/**
  * Sintaxis : MetodoHTTP->Controlador->Action->Permisos 
  * Si no hay permiso definido, se da como valido
  */
-
 // formato [ autenticado(bool), [roles permitidos] ]
 $getMethods = [
     "Usuario" => [
         "index" => [
             AuthRules::DENY_ALL
+        ],
+        "login" => [
+            AuthRules::ALLOW_ALL
         ]
     ]
 ];
 
 $postMethods = [
-   
+    "Usuario" => [
+        "login" => [
+            AuthRules::ALLOW_ALL
+        ]
+    ]
 ];
 
 $putMethods = [

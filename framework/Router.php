@@ -92,39 +92,6 @@ class Router {
         $this->file = join(DIRECTORY_SEPARATOR , array($this->path , $this->controller . 'Controller.php'));
     }
 
-    private function checkAuthRules($controller, $action) {
-
-        if (in_array($controller, $this->registry->routerConditions["PermisoEspecial"])) {
-            return;
-        }
-
-        $methodHTTP = filter_input(INPUT_SERVER, Constantes::REQUEST_METHOD);
-
-        $conditions = $this->registry->routerConditions[$methodHTTP];
-
-        if (isset($conditions[$controller]) && isset($conditions[$controller][$action])) {
-            $terminos = $conditions[$controller][$action];
-            if (isset($conditions[$controller][$action])) {
-                $terminos = $conditions[$controller][$action];
-
-                if ($terminos[0] == $_SESSION[Constantes::SESS_AUTENTICADO]) {
-                    if ($terminos[0] == true) {
-                        $rol = SessionUtil::getMaximoRolUsuario();
-                        if (in_array($rol, $terminos[1])) {
-                            return;
-                        }
-                        die("ERROR: NO AUTORIZADO");
-                    }
-                    return;
-                }
-                die("ERROR: NO AUTENTICADO");
-            }
-
-            die("ERROR: PERMISO PARA ACCION " . $action . " NO DEFINIDO");
-        }
-        die("ERROR: PERMISO PARA CONTROLADOR " . $controller . " NO DEFINIDO");
-    }
-
     /**
      *
      * @load the controller

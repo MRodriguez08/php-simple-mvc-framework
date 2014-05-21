@@ -23,7 +23,7 @@ class RolUsuarioEntity {
 
     /**
      * @ORM\Column(type="string",length=1000,nullable=false) 
-     * */
+     */
     protected $descripcion;
 
     /**

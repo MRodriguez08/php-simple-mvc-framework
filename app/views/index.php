@@ -1,8 +1,8 @@
 <?php
 
-use framework\Session;
+use framework\security\session\Session;
 
-if (Session::get(Session::AUTENTICADO)) {
+if (Session::getSession()->get(Session::AUTHENTICATED)) {
     
 }
 ?>

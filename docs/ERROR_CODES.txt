@@ -7,3 +7,6 @@ ERROR04: User information not found in current session
 ERROR05: Authentication rules file not defined in configuration file. [see auth.rules_file configuration parameter]
 ERROR06: Configuraction file not found
 ERROR07: Action denied to all
+ERROR08: No relational database type not supported
+ERROR09: Master page not found
+ERROR10: View not found

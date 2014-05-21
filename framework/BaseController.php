@@ -42,6 +42,10 @@ abstract class BaseController {
             case BaseController::METHOD_POST:
                 $json = file_get_contents('php://input');
                 $this->arguments = json_decode($json, true);
+                if( $this->arguments == null)
+                {
+                    $this->arguments = $_POST;
+                }
                 break;
             case BaseController::METHOD_PUT:
                 break;

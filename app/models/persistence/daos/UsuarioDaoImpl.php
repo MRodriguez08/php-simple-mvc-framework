@@ -3,7 +3,7 @@
 namespace app\models\persistence\daos;
 
 use app\models\persistence\daos\UsuarioDao;
-use framework\persistence\DaoImpl;
+use framework\persistence\dao\DaoImpl;
 use app\models\persistence\util\EnumEntities;
 
 class UsuarioDaoImpl extends DaoImpl implements UsuarioDao {

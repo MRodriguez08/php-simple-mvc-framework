@@ -4,33 +4,33 @@ namespace app\models\business;
 
 use framework\business\BusinessImpl;
 
-class <class-name> extends BusinessImpl implements <interface-name> {
+class NegocioParametroImpl extends BusinessImpl implements NegocioParametro {
     
     public function __construct($globalRegistry) {
         parent::__construct($globalRegistry);
     }
     
-    public function create<entity-name>($data){
+    public function createParametro($data){
         
         
     }
     
-    public function delete<entity-name>($data){
+    public function deleteParametro($data){
         
         
     }
     
-    public function update<entity-name>($data){
+    public function updateParametro($data){
         
         
     }
     
-    public function view<entity-name>($data){
+    public function viewParametro($data){
         
         
     }
     
-    public function getAll<entity-name>($data){
+    public function getAllParametro($data){
         
         
     }

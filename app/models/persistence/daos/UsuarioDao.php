@@ -2,7 +2,7 @@
 
 namespace app\models\persistence\daos;
 
-use framework\persistence\Dao;
+use framework\persistence\dao\Dao;
 
 interface UsuarioDao extends Dao {
 
