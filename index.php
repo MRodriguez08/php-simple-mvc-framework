@@ -3,7 +3,7 @@
 /* 
  * Load application base paths
  */
-include_once join(DIRECTORY_SEPARATOR, array('conf','define.php'));
+include_once join(DIRECTORY_SEPARATOR, array('framework','bootstrap','define.php'));
 
 /*
  * Initialize framework 
@@ -13,7 +13,7 @@ include_once join(DIRECTORY_SEPARATOR, array(__BASE_PATH , 'framework','initFram
 /*
  * Start the session if not already started
  */
-framework\security\session\Session::getSession()->startSession();
+framework\lascano\modules\session\Session::getSession()->startSession();
 
 /* 
  * make the the router execute the requested action 
