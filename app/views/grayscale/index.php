@@ -64,14 +64,14 @@
                             <a class="page-scroll" href="#download">Download</a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="#contact">Contact</a>
+                            <a class="page-scroll" href="#startbootstrap">Start Bootstrap</a>
                         </li>
                         <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                            StartBootstrap Themes
+                            Other themes
                         </a>
                         <ul class="dropdown-menu dropdown-user">
-                            <li><a href="<?php echo LK::createUrl('site/index') ?>">Grayscale Theme</a>
+                            <li><a href="<?php echo LK::createUrl('grayscale/index') ?>">Grayscale Theme</a>
                             </li>
                             <li><a href="<?php echo LK::createUrl('sbadmin2/index') ?>">SB Admin v2 Theme</a>
                             </li>
@@ -85,8 +85,6 @@
             <!-- /.container -->
         </nav>
 
-        <?php /* <master-page>siteMasterPage</master-page> */ ?>
-
 
 
         <!-- Intro Header -->
@@ -96,7 +94,7 @@
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
                             <h4 class="brand-heading">Simple PHP MVC Framework</h4>
-                            <p class="intro-text">A free, responsive, one page Bootstrap theme.<br>Created by Start Bootstrap.</p>
+                            <p class="intro-text">A very simple php mvc framework with some StartBootstrap Themes</p>
                             <a href="#about" class="btn btn-circle page-scroll">
                                 <i class="fa fa-angle-double-down animated"></i>
                             </a>
@@ -110,10 +108,14 @@
         <section id="about" class="container content-section text-center">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <h2>About Grayscale</h2>
-                    <p>Grayscale is a free Bootstrap 3 theme created by Start Bootstrap. It can be yours right now, simply download the template on <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
-                    <p>This theme features stock photos by <a href="http://gratisography.com/">Gratisography</a> along with a custom Google Maps skin courtesy of <a href="http://snazzymaps.com/">Snazzy Maps</a>.</p>
-                    <p>Grayscale includes full HTML, CSS, and custom JavaScript files along with LESS files for easy customization.</p>
+                    <h2>About simple-php-mvc-framework</h2>
+                    <p>
+                        Simple PHP MVC Framework is a very lightweight MVC framework implemented using pure php functions.                        
+                    </p>
+                    <p>
+                        Some of the supported features are the posibility of creating simple php pages or php pages with masterpage, implementation of <br/>
+                        rest webservices as special controllers, url formating, and many others.
+                    </p>
                 </div>
             </div>
         </section>
@@ -123,21 +125,24 @@
             <div class="download-section">
                 <div class="container">
                     <div class="col-lg-8 col-lg-offset-2">
-                        <h2>Download Grayscale</h2>
-                        <p>You can download Grayscale for free on the preview page at Start Bootstrap.</p>
-                        <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a>
+                        <h2>Download simple-php-mvc-framework</h2>
+                        <p>You can visit SPMF page on github </p>
+                        <a href="https://github.com/MRodriguez08/simple-php-mvc-framework" class="btn btn-default btn-lg">Visit Download Page</a>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="container content-section text-center">
+        <section id="startbootstrap" class="container content-section text-center">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Contact Start Bootstrap</h2>
-                    <p>Feel free to email us to provide some feedback on our templates, give us suggestions for new templates and themes, or to just say hello!</p>
-                    <p><a href="mailto:feedback@startbootstrap.com">feedback@startbootstrap.com</a>
+                    <h2>Start Bootstrap</h2>
+                    <p>
+                        As we said, SPMF is just a very lightweight framework. The amazing views shown on SPMF examples are <br/>
+                        Start Bootstrap artwork! Down here you have some links to many other examples of comertial and administration <br/>
+                        templates.
+                    </p>
                     </p>
                     <ul class="list-inline banner-social-buttons">
                         <li>

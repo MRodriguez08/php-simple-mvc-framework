@@ -264,10 +264,10 @@
                     </li>
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                            StartBootstrap Themes
+                            Other themes
                         </a>
                         <ul class="dropdown-menu dropdown-user">
-                            <li><a href="<?php echo LK::createUrl('site/index') ?>">Grayscale Theme</a>
+                            <li><a href="<?php echo LK::createUrl('grayscale/index') ?>">Grayscale Theme</a>
                             </li>
                             <li><a href="<?php echo LK::createUrl('sbadmin2/index') ?>">SB Admin v2 Theme</a>
                             </li>
