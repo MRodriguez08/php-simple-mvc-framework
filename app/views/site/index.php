@@ -14,7 +14,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>SPMF</title>
+        <title>SPMF - Greyscale</title>
 
         <!-- Bootstrap Core CSS -->
         <link href="<?php echo __BASE_URL; ?>/assets/themes/grayscale/css/bootstrap.min.css" rel="stylesheet">
