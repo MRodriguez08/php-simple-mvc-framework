@@ -1,4 +1,8 @@
-<?php ?>
+<?php
+/*
+ * @viewType=MasterPage
+ */
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,16 +14,16 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>Grayscale - Start Bootstrap Theme</title>
+        <title>SPMF</title>
 
         <!-- Bootstrap Core CSS -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
 
         <!-- Custom CSS -->
-        <link href="css/grayscale.css" rel="stylesheet">
+        <link href="../assets/css/grayscale.css" rel="stylesheet">
 
         <!-- Custom Fonts -->
-        <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="../assets/fonts/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
         <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
         <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
@@ -42,7 +46,7 @@
                         <i class="fa fa-bars"></i>
                     </button>
                     <a class="navbar-brand page-scroll" href="#page-top">
-                        <i class="fa fa-play-circle"></i>  <span class="light">Start</span> Bootstrap
+                        Simple PHP MVC Framework
                     </a>
                 </div>
 
@@ -68,9 +72,22 @@
             </div>
             <!-- /.container -->
         </nav>
-        
+
         <?php include_once $partialView; ?>
 
     </body>
+    <!-- jQuery Version 1.11.0 -->
+    <script src="../assets/js/jquery-1.11.0.js"></script>
 
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="../assets/js/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../assets/js/grayscale.js"></script>
 </html>

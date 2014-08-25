@@ -2,7 +2,7 @@
 
 namespace framework\lascano\core;
 
-use framework\lascano\modules\util\RegularExpression;
+use framework\lascano\modules\util\Property;
 
 Class Template {
     /*
@@ -55,8 +55,8 @@ Class Template {
         }
 
         $str = file_get_contents($view);
-        $masterPage = RegularExpression::getTextBetweenTags($str, "master-page");
-
+        $masterPage = Property::getViewProperty($str,Property::VIEW_PROPERTY_MASTER_PAGE);
+        
         if ($masterPage !== null) {
             $masterPage = join(DIRECTORY_SEPARATOR , array($viewsPath , "master" , $masterPage . ".php"));
             if (file_exists($masterPage) == false) {
