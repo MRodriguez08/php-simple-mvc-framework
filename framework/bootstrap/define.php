@@ -13,6 +13,7 @@
  */
 $scrUrl = dirname($_SERVER['PHP_SELF']);
 $scrPath = __FILE__;
+
 /**
  * Base path of the application on the filesystem
  */

@@ -79,12 +79,12 @@ class Router {
             $v = new Http;
             $a = $v->getFullRequestUri();
             $parts = explode('/', $a);
-            $this->controller = $parts[count($parts) - 1];
+            $this->controller = $parts[count($parts) - 2];
+            $this->action = $parts[count($parts) - 1];
             if (strpos($this->controller,'?') !== false){
                 $arr = explode('?',$this->controller);
                 $this->controller = $arr[0];
-            }
-            //var_dump($this->controller);
+            }           
         }
 
         /* controlador por defecto es el Index */
@@ -101,6 +101,7 @@ class Router {
          *  set the file path 
          */
         $this->controller = strtoupper(substr($this->controller, 0, 1)) . substr($this->controller, 1);
+        
         $this->file = join(DIRECTORY_SEPARATOR, array($this->path, $this->controller . 'Controller.php'));
     }
 
